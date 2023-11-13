@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h2 class="title">
+          <span class="title-word title-word-1">You</span>
+          <span class="title-word title-word-2">Are</span>
+          <span class="title-word title-word-3">Very</span>
+          <span class="title-word title-word-4">Gay</span>
+        </h2>
+      </div>
+    
+    <div class="container">
+        <h2 class="title">
+          <span class="title-word title-word-1">روغن مکانیک </span>
+          <span class="title-word title-word-2">الان </span>
+          <span class="title-word title-word-3">متری</span>
+          <span class="title-word title-word-4">چنده داداش؟</span>
+        </h2>
+      </div>
+
+    <div class="contact-col">
+        <form action="form-handler.php" method="post">
+            <input type="text" name="name" placeholder="داش اسمتو بزن" required>
+            <input type="email" name="email" placeholder="داش ایمیلتو بزن" required>
+            <input type="text" name="subject" placeholder="داش موضوتو بزن" required>
+            <textarea rows="8" name="message" placeholder="داش حرفتو بزن"></textarea>
+            <button type="submit" class="hero-btn btn red-btn">بفرست براش</button>
+
+
+        </form>
+
+
+
+
+        
+    </div>
+
+  
+
+
+
+</body>
+<style>
+
+.title-word {
+  animation: color-animation 4s linear infinite;
+}
+
+.title-word-1 {
+  --color-1: #DF8453;
+  --color-2: #3D8DAE;
+  --color-3: #E4A9A8;
+}
+
+.title-word-2 {
+  --color-1: #DBAD4A;
+  --color-2: #ACCFCB;
+  --color-3: #17494D;
+}
+
+.title-word-3 {
+  --color-1: #ACCFCB;
+  --color-2: #E4A9A8;
+  --color-3: #ACCFCB;
+}
+
+.title-word-4 {
+  --color-1: #3D8DAE;
+  --color-2: #DF8453;
+  --color-3: #E4A9A8;
+}
+
+@keyframes color-animation {
+  0%    {color: var(--color-1)}
+  32%   {color: var(--color-1)}
+  33%   {color: var(--color-2)}
+  65%   {color: var(--color-2)}
+  66%   {color: var(--color-3)}
+  99%   {color: var(--color-3)}
+  100%  {color: var(--color-1)}
+}
+
+/* Here are just some visual styles. 🖌 */
+
+.container {
+  display: grid;
+  place-items: center;  
+  text-align: center;
+  height: 100vh
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 8.5vw;
+  text-transform: uppercase;
+}
+
+     body { font-family: Arial, sans-serif; } 
+     .contact-col { max-width: 500px; margin: 0 auto; padding: 20px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); } 
+     .contact-col input[type="text"], .contact-col input[type="email"], .contact-col textarea { width: 100%; padding: 10px; margin: 10px 0; box-sizing: border-box; border: 1px solid #ccc; border-radius: 3px; } 
+     .contact-col textarea { resize: vertical; } .contact-col .hero-btn { background-color: #ff0000; color: white; padding: 10px 20px; border: none; cursor: pointer; width: 100%; border-radius: 3px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; transition-duration: 0.4s; } 
+     .contact-col .hero-btn:hover { background-color: #b30000; color: white; }
+   
+   
+   
+
+     .btn{
+        background: linear-gradient(#e66465, #9198e5);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    }
+    .contact-col{
+        height: 90vh;
+        width: 80vh;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex: 1;
+    }
+    .contact-col input , .contact-col textarea{
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 17px;
+        outline: none;
+        border: 1px solid #ccc;
+    }
+
+
+
+</style>
+
+
+</html>
